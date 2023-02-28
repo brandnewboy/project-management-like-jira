@@ -1,0 +1,262 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "高修文"
+    },
+    {
+      "id": 2,
+      "name": "熊天成"
+    },
+    {
+      "id": 3,
+      "name": "郑华"
+    },
+    {
+      "id": 4,
+      "name": "王文静"
+    },
+    {
+      "id": 5,
+      "name": "方新贤"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "骑手管理",
+      "personId": 1,
+      "created": 1604980000011,
+      "organization": "外卖组",
+      "pin": true
+    },
+    {
+      "id": 2,
+      "name": "团购 APP",
+      "personId": 5,
+      "organization": "团购组",
+      "created": 1668675253300,
+      "pin": false
+    },
+    {
+      "id": 3,
+      "name": "物料管理系统",
+      "personId": 2,
+      "organization": "物料组",
+      "created": 1546300800000,
+      "pin": true
+    },
+    {
+      "id": 4,
+      "name": "总部管理系统",
+      "personId": 3,
+      "organization": "总部",
+      "created": 1604980000011,
+      "pin": true
+    },
+    {
+      "id": 5,
+      "name": "送餐路线规划系统",
+      "personId": 4,
+      "organization": "外卖组",
+      "created": 1546900800000,
+      "pin": false
+    },
+    {
+      "name": "语音识别算法",
+      "organization": "算法处理",
+      "personId": 2,
+      "created": 1668566222743,
+      "id": 6,
+      "pin": true
+    },
+    {
+      "name": "ADD-queryConfig测试",
+      "organization": "运维测试",
+      "personId": 4,
+      "created": 1668675629459,
+      "id": 8,
+      "pin": false
+    }
+  ],
+  "kanbans": [
+    {
+      "id": 1,
+      "name": "待完成",
+      "projectId": 1
+    },
+    {
+      "id": 2,
+      "name": "开发中",
+      "projectId": 1
+    },
+    {
+      "id": 3,
+      "name": "已完成",
+      "projectId": 1
+    },
+    {
+      "id": 5.6497119580760735,
+      "name": "运维测试",
+      "projectId": 1
+    },
+    {
+      "id": 9.504920395720264,
+      "name": "待完成",
+      "projectId": 2
+    },
+    {
+      "id": 2.612286745079897,
+      "name": "待完成",
+      "projectId": 8
+    },
+    {
+      "id": 7.105714316116498,
+      "name": "数据库系统维护",
+      "projectId": 1
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "name": "管理登录界面开发",
+      "kanbanId": 1,
+      "typeId": 1,
+      "projectId": 1,
+      "processorId": 5
+    },
+    {
+      "id": 2,
+      "name": "单元测试",
+      "kanbanId": 1,
+      "typeId": 1,
+      "projectId": 1,
+      "processorId": 2
+    },
+    {
+      "id": 3,
+      "name": "UI开发",
+      "kanbanId": 2,
+      "typeId": 1,
+      "projectId": 1,
+      "processorId": 3
+    },
+    {
+      "id": 4,
+      "name": "性能优化",
+      "kanbanId": 2,
+      "typeId": 1,
+      "projectId": 1,
+      "processorId": 4
+    },
+    {
+      "id": 5,
+      "name": "权限界面管理开发",
+      "kanbanId": 2,
+      "typeId": 1,
+      "projectId": 1,
+      "processorId": 5
+    },
+    {
+      "id": 6,
+      "name": "自测",
+      "kanbanId": 2,
+      "typeId": 1,
+      "projectId": 1,
+      "processorId": 1
+    },
+    {
+      "id": 7,
+      "name": "管理注册界面开发",
+      "kanbanId": 3,
+      "typeId": 2,
+      "projectId": 1,
+      "processorId": 2
+    },
+    {
+      "id": 8,
+      "name": "接口测试",
+      "kanbanId": 1,
+      "projectId": 1,
+      "typeId": 1,
+      "processorId": 2
+    },
+    {
+      "id": 9,
+      "name": "test",
+      "kanbanId": 9.504920395720264,
+      "projectId": 2,
+      "typeId": 1,
+      "processorId": 4
+    },
+    {
+      "id": 12,
+      "name": "UI测试",
+      "kanbanId": 2.612286745079897,
+      "projectId": 8,
+      "typeId": 1,
+      "processorId": 2
+    }
+  ],
+  "taskTypes": [
+    {
+      "id": 1,
+      "name": "bug"
+    },
+    {
+      "id": 2,
+      "name": "task"
+    }
+  ],
+  "epics": [
+    {
+      "id": 1,
+      "name": "骑手物料表单开发",
+      "projectId": 1,
+      "start": 1668675629459,
+      "end": 1668675629459
+    },
+    {
+      "id": 2,
+      "name": "骑手地图开发",
+      "projectId": 1,
+      "start": 1668675629459,
+      "end": 1668675629459
+    },
+    {
+      "id": 3,
+      "name": "骑手地图开发",
+      "projectId": 1,
+      "start": 1668675629459,
+      "end": 1668675629459
+    },
+    {
+      "id": 5,
+      "name": "测试",
+      "projectId": 1,
+      "start": 1669112562909,
+      "end": 1669112562909
+    },
+    {
+      "id": 6,
+      "name": "任务组界面测试",
+      "projectId": 2,
+      "start": 1669112764930,
+      "end": 1669112764930
+    },
+    {
+      "id": 9,
+      "name": "项目搭建",
+      "projectId": 8,
+      "start": 1669127452982,
+      "end": 1669127452982
+    },
+    {
+      "id": 4,
+      "name": "低代码平台搭建",
+      "projectId": 1,
+      "start": 1669169311066,
+      "end": 1669169311066
+    }
+  ]
+}

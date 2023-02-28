@@ -1,0 +1,38 @@
+
+const BASE_URL = 'http://localhost:3001' //process.env.REACT_APP_API_URL
+const fetchProjects = (param: ParamProps) => {
+  return new Promise<ProjectProps[]>((resolve, reject) => {
+    fetch(`${BASE_URL}/projects?${Utils.qsStringify(param!)}`)
+      .then(async res => {
+        if (res.ok) {
+          resolve(await res.json())
+        } else {
+          reject(new Error('请求失败!请检查网络或后台设置'))
+        }
+      })
+      .catch(() => {
+        reject(new Error('请求失败!请检查网络或后台设置'))
+      })
+  })
+}
+const editProject = (params: EditProjectProps) => {
+  return new Promise<ProjectProps[]>((resolve, reject) => {
+    fetch(`${BASE_URL}/projects/${params.id}`, {
+      method: 'PATCH',
+      body: JSON.stringify(params),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(async res => {
+        if (res.ok) {
+          resolve(await res.json())
+        } else {
+          reject(new Error('请求失败!请检查网络或后台设置'))
+        }
+      })
+      .catch(() => {
+        reject(new Error('请求失败!请检查网络或后台设置'))
+      })
+  })
+}
